@@ -1,4 +1,5 @@
 import { Tasks } from "../types/types";
+import { formatDate } from "../utils/formatDate";
 
 interface Props {
   task: Tasks;
@@ -19,6 +20,8 @@ const TodoItem = ({ task, deleteTask }: Props) => {
     deleteTask(task.id);
   };
 
+  const formattedDates = formatDate(task.dateCreated);
+
   return (
     <div className="flex flex-col shadow-lg w-auto h-auto p-3 my-3 rounded-2xl bg-slate-200">
       <div className="flex flex-row justify-between">
@@ -31,6 +34,7 @@ const TodoItem = ({ task, deleteTask }: Props) => {
         >
           {task.priority}
         </span>
+        <span>{formattedDates}</span>
         <button
           className="py-1 px-3 bg-blue-500 rounded-3xl text-white"
           onClick={handleDelete}
