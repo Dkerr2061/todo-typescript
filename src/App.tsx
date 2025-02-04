@@ -22,6 +22,30 @@ function App() {
     getTasks();
   }, []);
 
+  //* API call to POST Tasks
+
+  const addTask = (newTask: Tasks) => {
+    const postTask = async () => {
+      try {
+        const res = await fetch("http://localhost:3000/tasks", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...newTask,
+            dateCreated: new Date().toISOString(),
+          }),
+        });
+        const data = await res.json();
+        setTasks((prevTask) => [...prevTask, data]);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    postTask();
+  };
+
   //* API call to DELETE Tasks
   const deleteTask = (id: string) => {
     const removeTask = async () => {
@@ -47,7 +71,9 @@ function App() {
         <Route
           path="/"
           index
-          element={<TodoList tasks={tasks} deleteTask={deleteTask} />}
+          element={
+            <TodoList tasks={tasks} deleteTask={deleteTask} addTask={addTask} />
+          }
         />
         <Route path="/about" element={<About />} />
       </Routes>
