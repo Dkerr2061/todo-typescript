@@ -1,0 +1,67 @@
+{
+  "tasks": [
+    {
+      "task": "Do the laundry",
+      "dateCreated": "2025-02-03T10:00:00Z",
+      "category": "chores",
+      "priority": "medium",
+      "id": "4569"
+    },
+    {
+      "task": "Complete JavaScript assignment",
+      "dateCreated": "2025-02-02T15:30:00Z",
+      "category": "school",
+      "priority": "high",
+      "id": "a240"
+    },
+    {
+      "task": "Watch a movie",
+      "dateCreated": "2025-02-01T20:00:00Z",
+      "category": "entertainment",
+      "priority": "low",
+      "id": "f379"
+    },
+    {
+      "task": "Submit work report",
+      "dateCreated": "2025-02-03T08:00:00Z",
+      "category": "work",
+      "priority": "high",
+      "id": "0141"
+    },
+    {
+      "task": "Grocery shopping",
+      "dateCreated": "2025-02-03T12:00:00Z",
+      "category": "chores",
+      "priority": "medium",
+      "id": "1fed"
+    },
+    {
+      "task": "Study for SQL exam",
+      "dateCreated": "2025-02-02T18:45:00Z",
+      "category": "school",
+      "priority": "high",
+      "id": "7ddf"
+    },
+    {
+      "task": "Play video games",
+      "dateCreated": "2025-02-01T22:00:00Z",
+      "category": "entertainment",
+      "priority": "low",
+      "id": "a7a2"
+    },
+    {
+      "task": "Finish project documentation",
+      "dateCreated": "2025-02-03T09:30:00Z",
+      "category": "work",
+      "priority": "high",
+      "id": "b7ac"
+    },
+    {
+      "task": "Vacuum the house",
+      "dateCreated": "2025-02-02T14:00:00Z",
+      "category": "chores",
+      "priority": "medium",
+      "id": "9c0f"
+    }
+  ]
+}
