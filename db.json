@@ -66,9 +66,16 @@
     {
       "id": "fe0b5dad-0bbb-4d68-b940-2d4e5b896b00",
       "task": "Study Docker",
-      "category": "chores",
-      "priority": "medium",
+      "category": "school",
+      "priority": "high",
       "dateCreated": "2025-02-04T15:54:14.685Z"
+    },
+    {
+      "id": "dd68b3b3-e4f0-4b96-aba6-23a6fe646188",
+      "task": "Create a new react app with form",
+      "category": "school",
+      "priority": "low",
+      "dateCreated": "2025-02-05T02:38:26.541Z"
     }
   ]
 }

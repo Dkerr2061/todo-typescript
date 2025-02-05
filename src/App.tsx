@@ -46,6 +46,26 @@ function App() {
     postTask();
   };
 
+  //* API call to UPDATE Tasks
+  const updateTask = (taskToUpdate: Tasks, id: string) => {
+    const patchTask = async () => {
+      try {
+        const res = await fetch(`http://localhost:3000/tasks/${id}`, {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ ...taskToUpdate }),
+        });
+        const data = await res.json();
+        setTasks(tasks.map((task) => (task.id === id ? data : task)));
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    patchTask();
+  };
+
   //* API call to DELETE Tasks
   const deleteTask = (id: string) => {
     const removeTask = async () => {
@@ -72,7 +92,12 @@ function App() {
           path="/"
           index
           element={
-            <TodoList tasks={tasks} deleteTask={deleteTask} addTask={addTask} />
+            <TodoList
+              tasks={tasks}
+              deleteTask={deleteTask}
+              addTask={addTask}
+              updateTask={updateTask}
+            />
           }
         />
         <Route path="/about" element={<About />} />

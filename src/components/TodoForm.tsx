@@ -78,6 +78,7 @@ const TodoForm = ({ addTask }: Props) => {
             <option value="chores">Chores</option>
             <option value="work">Work</option>
             <option value="entertainment">Entertainment</option>
+            <option value="school">School</option>
           </select>
         </div>
         <button

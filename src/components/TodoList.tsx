@@ -6,11 +6,19 @@ interface TaskProps {
   tasks: Tasks[];
   deleteTask: (id: string) => void;
   addTask: (newTask: Tasks) => void;
+  updateTask: (updateTask: Tasks, id: string) => void;
 }
 
-const TodoList = ({ tasks, deleteTask, addTask }: TaskProps) => {
+const TodoList = ({ tasks, deleteTask, addTask, updateTask }: TaskProps) => {
   const todoElement = tasks.map((task) => {
-    return <TodoItem key={task.id} task={task} deleteTask={deleteTask} />;
+    return (
+      <TodoItem
+        key={task.id}
+        task={task}
+        deleteTask={deleteTask}
+        updateTask={updateTask}
+      />
+    );
   });
 
   return (
