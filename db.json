@@ -64,18 +64,18 @@
       "id": "9c0f"
     },
     {
-      "id": "fe0b5dad-0bbb-4d68-b940-2d4e5b896b00",
+      "id": "8696a8e1-9533-4d3b-848b-c7595c26a91f",
       "task": "Study Docker",
       "category": "school",
-      "priority": "high",
-      "dateCreated": "2025-02-04T15:54:14.685Z"
+      "priority": "medium",
+      "dateCreated": "2025-02-05T03:17:33.067Z"
     },
     {
-      "id": "dd68b3b3-e4f0-4b96-aba6-23a6fe646188",
+      "id": "1d78f55b-77a8-418d-8bfb-8334e9b8e62e",
       "task": "Create a new react app with form",
-      "category": "school",
+      "category": "work",
       "priority": "low",
-      "dateCreated": "2025-02-05T02:38:26.541Z"
+      "dateCreated": "2025-02-05T03:35:48.837Z"
     }
   ]
 }

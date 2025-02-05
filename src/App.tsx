@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { TodoList } from "./components/TodoList";
 import "./index.css";
 import { About } from "./pages/About";
+import { NavBar } from "./components/NavBar";
 
 function App() {
   const [tasks, setTasks] = useState<Tasks[]>([]);
@@ -87,6 +88,7 @@ function App() {
 
   return (
     <>
+      <NavBar />
       <Routes>
         <Route
           path="/"
